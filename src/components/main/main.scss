@@ -1,0 +1,38 @@
+@import '../../base';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    padding: 20px;
+    background: $white
+}
+
+.main-content {
+    display: flex;
+    background: url('../../Assets/images/vwcover.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: #fff;
+    justify-items: center;
+
+}
+
+.car-list-panel {
+    background: $white;
+    padding: 10px;
+
+}
+
+.wrapper {
+    display: grid;
+    // max-width: 100%;
+    // max-height: 100%;
+    margin: 4% 0 0 0;
+    max-width: 1000;
+    height: 80vh;
+    grid-template-columns: 10% auto 31%;
+}
