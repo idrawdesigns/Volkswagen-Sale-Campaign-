@@ -1,0 +1,135 @@
+@import'../../base';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.details-wrapper {
+  padding: 10px;
+  display: flex;
+  background: $grey;
+  flex-direction: column;
+
+}
+
+.header i {
+  margin: 20px 20px 0px 0;
+  padding: 9px;
+  background: $blue;
+  color: #fff;
+  float: right;
+  font-weight: bold;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.scroll i {
+  margin: 0px 10px 0px 0;
+  padding: 4px;
+  background: #fff;
+  color: $blue;
+  float: right;
+  font-weight: bold;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+
+.content {
+  display: grid;
+  margin-top: 30px;
+  flex-direction: row;
+  grid-column-gap: 10px;
+  grid-template-areas: "left right"
+
+}
+
+.Left-side {
+  padding: 20px;
+  grid-area: left;
+  // background: red;
+}
+
+.header-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.title {
+  margin-right: 10px;
+
+}
+
+.title>h3 {
+  font-weight: 800;
+}
+
+.terrain>h4 {
+  font-size: 14px;
+  font-weight: 900;
+  color: $blue;
+
+}
+
+.car-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.image-container {
+  margin-top: -40px;
+  z-index: 0;
+}
+
+.image-container>img {
+  width: 230px;
+  z-index: -1;
+  margin-left: -20px;
+
+}
+
+.price {
+  clip-path: polygon(0 0,
+    /* left top */
+    90% 0,
+    /* right top */
+    100% 100%,
+    /* right bottom */
+    0 100%
+    /* left bottom */
+    );
+  padding: 10px 15px 10px 50px;
+  margin-left: 130px;
+  line-height: 0.3;
+  background-color: $blue;
+  width: 150px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  grid-area: right;
+  // background: blue;
+}
+
+.specs {
+  display: flex;
+  margin-bottom: 50px;
+  text-align: justify;
+
+}
+
+.specs>h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.specs>p {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(31, 29, 29, 0.445);
+
+}

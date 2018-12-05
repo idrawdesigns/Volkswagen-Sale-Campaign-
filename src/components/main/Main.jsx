@@ -1,8 +1,14 @@
 import React from 'react'
+import { Link, Switch, Route } from 'react-router-dom'
 import './main.scss'
 
 import Logo from './Logo'
 import CarList from './CarList'
+import FullDetails from '../carfulldetails/index'
+
+const Home = () => {
+  return <div className="main-content" />
+}
 
 const main = () => {
   return (
@@ -10,7 +16,10 @@ const main = () => {
       <aside className="logo">
         <Logo />
       </aside>
-      <div className="main-content" />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/details" component={FullDetails} />
+      </Switch>
       <div
         className="car-list-panel "
         data-simplebar
